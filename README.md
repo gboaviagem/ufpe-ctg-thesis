@@ -25,7 +25,7 @@ Este repositório utiliza uma versão bastante customizada da classe abnTeX2, a 
 
 ## Contribuições
 
-É possível que algum detalhe das normas fuja a este template, por isso incentivamos os usuários a abrirem "issues" ou "pull requests" aqui no repositório, para melhoria e benefício dos futuros usuários.
+É possível que algum detalhe das normas fuja a este template, por isso incentivo **os usuários a abrirem "issues" ou "pull requests" aqui no repositório**, para melhoria e benefício dos futuros usuários.
 
 ## Licença
 
