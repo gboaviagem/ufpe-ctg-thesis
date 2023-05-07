@@ -1,0 +1,101 @@
+\usepackage{mathtools}
+\usepackage{booktabs}
+\usepackage{amsmath,amsthm,amsfonts,cite,color,enumerate,subfig}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{nicefrac}
+\usepackage{subfig}
+\usepackage{algpseudocode}
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage{framed}
+\usepackage{cancel} % Use \usepackage[thicklines]{cancel} for thicker strokes
+
+\usepackage{lipsum}  % for sample text
+
+\usepackage[font=small, position=top]{caption}
+
+\newenvironment{openingquote}
+    {
+        \begin{flushright}
+        \begin{minipage}{\textwidth - 4cm}
+        \small
+    }
+    { 
+        \end{minipage}
+        \end{flushright}
+    }
+
+\definecolor{cancelgray}{gray}{0.5}
+\renewcommand{\CancelColor}{\color{cancelgray}}
+
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left=30mm,
+    top=30mm,
+    right=20mm,
+    bottom=20mm,
+}
+\linespread{1.5}
+\usepackage{chngcntr}
+\counterwithout{equation}{chapter} % remove the chapter number
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{example}{Example}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{lem}[theorem]{Lemma}
+\allowdisplaybreaks
+
+% NEW COMMANDS
+\renewcommand{\mod}[1]{\  (\mathrm{mod} \ #1)}
+\newcommand{\qi}{\boldsymbol{i}}
+\newcommand{\qphi}{\boldsymbol{\phi}}
+\newcommand{\qj}{\boldsymbol{j}}
+\newcommand{\qk}{\boldsymbol{k}}
+\newcommand{\qmu}{\boldsymbol{\mu}}
+\newcommand{\qnu}{\boldsymbol{\nu}}
+\newcommand{\qV}{\boldsymbol{V}}
+\newcommand{\sen}{\mathrm{\, sen \,}}
+\newcommand{\red}[1]{{\color{red}#1}}
+\DeclareRobustCommand{\rchi}{{\mathpalette\irchi\relax}}
+\newcommand{\irchi}[2]{\raisebox{\depth}{\Large $#1\chi$}} % inner command, used by \rchi
+\newcommand{\floatsource}[1][the author (2022)]{\\ \small Source: #1.}
+
+% ISOMORPHISM SYMBOL
+\makeatletter
+\newcommand*{\isomorphism}{%
+	\mathrel{%
+		\mathpalette\@isomorphism{}%
+	}%
+}
+\newcommand*{\@isomorphism}[2]{%
+	% Calculate the amount of moving \sim up as in \simeq
+	\sbox0{$#1\simeq$}%
+	\sbox2{$#1\sim$}%
+	\dimen@=\ht0 %
+	\advance\dimen@ by -\ht2 %
+	%
+	% Compose the two symbols
+	\sbox0{%
+		\lower1.9\dimen@\hbox{%
+			$\m@th#1\relbar\isomorphism@joinrel\relbar$%
+		}%
+	}%
+	\rlap{%
+		\hbox to \wd0{%
+			\hfill\raise\dimen@\hbox{$\m@th#1\sim$}\hfill
+		}%
+	}%
+	\copy0 %
+}
+\newcommand*{\isomorphism@joinrel}{%
+	\mathrel{%
+		\mkern-3.4mu %
+		\mkern-1mu %
+		\nonscript\mkern1mu %
+	}%
+}
+\makeatother
