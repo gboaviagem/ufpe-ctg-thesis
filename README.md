@@ -1,6 +1,6 @@
 # Template de Tese de Doutorado em LaTeX para o CTG/UFPE
 
-Este repositório contém um template em LaTeX para teses de doutorado (e possivelmente mestrado) dos alunos do **Centro de Tecnologia e Geociências (CTG) da Universidade Federal de Pernambuco (UFPE)**. O template exatamente aquele que precisei customizar para ter a **[minha Tese](https://github.com/gboaviagem/phd-thesis)** aprovada em maio de 2023 pela Biblioteca do CTG.
+Este repositório contém um template em LaTeX para teses de doutorado (e possivelmente mestrado) dos alunos do **Centro de Tecnologia e Geociências (CTG) da Universidade Federal de Pernambuco (UFPE)**. O template é exatamente aquele que precisei customizar para ter a **[minha Tese](https://github.com/gboaviagem/phd-thesis)** aprovada em maio de 2023 pela Biblioteca do CTG.
 
 Veja **[aqui o template em PDF](./thesis/out/main.pdf)**.
 
@@ -29,4 +29,4 @@ Este repositório utiliza uma versão bastante customizada da classe abnTeX2, a 
 
 ## Licença
 
-Este template é distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este template é distribuído sob a licença GNU GPL v3.0. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
